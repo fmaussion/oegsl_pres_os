@@ -1,0 +1,539 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>What open-source can do for you, and what you can do for open-source</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>What open-source can do for you</h3>
+					<h4>and what you can do for open-source</h4>
+					<small>
+					An incentive for better software development practices in the research community
+				  </small>
+
+
+					<img class="plain" src="img/logo_acinn.png" height=140vh align="middle">
+
+									<small>
+									  ÖGSL Semmelnar, 05.05.2020 <br> <br>
+									  <a href="http://fabienmaussion.info">Fabien Maussion</a> <br>
+									  <a href="https://www.uibk.ac.at/acinn">Department of Atmospheric and Cryospheric Sciences (ACINN)</a><br>
+									  <a href="http://uibk.ac.at">University of Innsbruck</a><br></td>
+									</small>
+
+				</section>
+
+			<!--
+				<section style="text-align: left;">
+					<b>Disclaimer 1</b> me and programming
+					<p><img class="plain" src="img/Brainy-Play.jpg" height="70%" ></p>
+				</section>
+			-->
+				<!-- Nested vertical slides  -->
+				<section>
+					<section>
+						<h2>Take home points</h2>
+						<p>What can open-source do for <font color="#cc0000">you</font>?</p>
+					</section>
+					<section>
+						<p>Open-source isn't only "free": it is a programming culture
+						conveying the concepts of code readability, documentation,
+						reproducibility, and open review. <br> <br> These concepts can (and should) be applied
+					  to the scientific practice (Open Science).</p>
+					</section>
+					<section>
+						<p>Embracing this culture and getting involved in the community
+							(even with small contributions!) will offer you
+							much more than simple "tools": <br> you will learn from this
+							experience and develop ideas for your own work.</p>
+					</section>
+				</section>
+
+				<!-- Nested vertical slides  -->
+				<section>
+					<section>
+						<h2>Take home points</h2>
+						<p>What can <font color="#cc0000">you</font> do for open-source?</p>
+					</section>
+					<section>
+						<p>The responsibility for the development and maintenance of
+							today's major scientific tools changed hands, from
+							private companies to volunteers and academics. Funding agencies
+						  and universities are saving money, and this money
+						  should be redistributed to the open-source community
+							(directly or indirectly).</p>
+					</section>
+					<section>
+						<p><b>Open science takes time!</b> Scientific papers
+							should be evaluated according to new standards: transparency
+							and reproducibility of the analysis chain, availability of data
+							and code and its documentation.</p>
+
+						<p><span class="fragment"><b>Open source takes time!</b>  The work
+							of open source developers should be acknowledged and should become
+							an asset for academic jobs, not a handicap.</span></p>
+					</section>
+				</section>
+
+				<!-- Nested vertical slides  -->
+				<section>
+					<section>
+						<h2>Today's non goals</h2>
+						<ul>
+							<span class="fragment"><li>licensing flame war: "copyleft" vs "permissive"</li></span>
+							<span class="fragment"><li>open-source as mantra: <br> it's still OK to use Windows/Adobe/YourFavoriteTool and practice open-science</li></span>
+						</ul>
+					</section>
+				</section>
+
+
+				<section>
+ 					Let's start with a provocative statement...
+			 </section>
+
+
+				<section>
+					<h3>Science relies on</h3>
+			<font size="6">
+				<ul>
+					<span class="fragment"><li>peer review</li></span>
+					<span class="fragment"><li>skepticism</li></span>
+					<span class="fragment"><li>transparency</li></span>
+					<span class="fragment"><li>attribution</li></span>
+					<span class="fragment"><li>accountability</li></span>
+					<span class="fragment"><li>collaboration</li></span>
+					<span class="fragment"><li>impact</li></span>
+				</ul>
+					<br>
+						<br>
+					<span class="fragment">Since always, academic science has been perfecting these tenents.</span>
+						<br>
+					<span class="fragment"><b>Open source software is now excellent (superior?) at all of them.</b></span>
+					<br>
+			</font>
+
+					<div align="right">
+						<font size="2">  	&#169; original slide by <a href="http://katyhuff.github.io/town-hall/#/2/2">Katy Huff</a><br></font>
+					</div>
+				</section>
+
+
+			<section>
+				<section>
+					<h3>A common misconception</h3>
+					<p>Open source <font color="#cc0000">=</font> free (as in "free beer")</p>
+					<p><span class="fragment">Free <font color="green">&#8712;</font> Open source</span></p>
+				</section>
+
+					<section style="text-align: left;">
+						<b>Open source <font color="#cc0000">&#8800;</font>source-available</b>
+						<p>Important elements of an open-source project:</p>
+					<ul>
+						<li>License (copyleft or permissive)</li>
+						<li>Documentation</li>
+						<li>Contributing rules</li>
+						<li>Tests</li>
+						<li>Peer review</li>
+						<li>Community governance (rules depend on the project)</li>
+          </ul>
+					</section>
+			</section>
+
+		<section>
+			<section>
+				<h4>Collaborative development workflow</h4>
+				<p><img class="plain" src="img/merge-request.jpg" height="100%"></p>
+			</section>
+
+				<section style="text-align: left;">
+					<h3>Example</h3>
+					<br>
+						<a href="https://github.com/astropy/astropy/pull/5712">New feature in the Astropy package</a> <br>
+				</section>
+		</section>
+
+	<section>
+
+		<section>
+			<h3>A common misconception</h3>
+
+			<blockquote>
+					&ldquo;Open-source software is not-reliable / untested / not-working properly.&rdquo;
+			</blockquote>
+          <br>
+					<p><span class="fragment">Well, it depends: <br> OS development is self-regulating,
+					and it works best if people actually use the system and report issues.</span></p>
+		</section>
+
+		<section style="text-align: left;">
+			<h4>Bug fixes, with...</h4>
+			<small>
+			<span class="fragment">
+			<b>... a proprietary software:</b>
+			<ul>
+				<li>User fills a ticket</li>
+				<li>If lucky, after a certain time the user gets notified that the bug was fixed</li>
+				<li>The fix is available in the upcoming version of the software <br> (sometimes at the price of a new license)</li>
+			</ul>
+		</span>
+		<br>
+		<br>
+		<span class="fragment">
+		<b>... an open-source software:</b>
+		<ul>
+			<li>User fills a ticket</li>
+			<li>Maintainers and user discuss the cause of the bug</li>
+			<li>If lucky, someone volunteers to fix the bug</li>
+			<li>A fix is proposed to the code base, discussed, and eventually merged</li>
+		</ul>
+	</small>
+	</span>
+			</section>
+
+			<section style="text-align: left;">
+				<b>Things to consider when using OS software:</b>
+			<ul>
+				<li>How large is the user base?</li>
+				<li>Are the maintainers responsive?</li>
+				<li>Are there bug reports? (the more, the better!)</li>
+				<li>Where are the tests, do they cover the functionality I'm using?</li>
+				<li>Continuous integration?</li>
+				<li>(Is there an institution supporting the software?)</li>
+			</ul>
+			</section>
+	</section>
+
+	<section>
+		 <section>
+			<h3>Testing and continuous integration</h3>
+
+			<br>
+			<br>
+			<small>
+				(is it getting boring already? We'll only do a short introduction ;)
+			</small>
+		</section>
+
+		<section style="text-align: left;">
+        <h3>I'll throw some affirmations in the "room"</h3>
+			<ul>
+				<span class="fragment"><li><span class="fragment highlight-red">“coding” is a menial task, not worthy of the attention of a distinguished scientist</span></li></span>
+				<span class="fragment"><li><span class="fragment highlight-red">I can write error-free code in one shot</span></li></span>
+				<span class="fragment"><li>Scientists <i>do</i> test their code...</li></span>
+				<span class="fragment"><li>... but often not in a formal/reproducible way</li></span>
+				<span class="fragment"><li><span class="fragment highlight-red">A script that worked once will always work.</span></li></span>
+			</ul>
+
+	  </section>
+
+		<section style="text-align: left;">
+        <h3> A glimpse in software testing techniques</h3>
+			<ul>
+				<li><a href="https://github.com/OGGM/oggm/blob/e81d892574839055195d1c96c85e19bf80e3b327/oggm/tests/test_numerics.py#L349-L381">Unit testing</a></li>
+				<li><a href="https://media.giphy.com/media/3o7rbPDRHIHwbmcOBy/giphy-downsized-large.gif">Integration testing</a></li>
+				<li><a href="https://travis-ci.com/OGGM/oggm">Continuous integration</a></li>
+				<li><a href="https://coveralls.io/github/OGGM/oggm?branch=master">Code coverage</a></li>
+				<li><a href="http://xkcd.com/1445/">Performance benchmarks</a></li>
+			</ul>
+	  </section>
+	</section>
+
+
+		<section>
+			<section>
+		<h3>A common misconception</h3>
+
+		<blockquote>
+			&ldquo;If I share my data or code, <br> people will steal my results
+				and I will be left with nothing.&rdquo;
+    </blockquote>
+
+	</section>
+
+
+		<section style="text-align: left;">
+			<h3>Publishing First</h3>
+      <font size="6">
+			<ul>
+				<span class="fragment"><li>Good: share code/data once all papers have been published</li></span>
+				<span class="fragment"><li>Better: share code/data as soon as there is a pre-print</li></span>
+				<span class="fragment"><li><font color="#006600">Best</font>: share, with a license, while working, if not sooner</li></span>
+			</ul>
+
+			<span class="fragment"><b>Congratulations: your online repository history is an insurance policy against thievery.</b></span>
+</font>
+
+
+					<div align="right">
+						<font size="2">  	&#169; original slide by <a href="http://katyhuff.github.io/town-hall/#/4/1">Katy Huff</a><br></font>
+					</div>
+		</section>
+
+
+			<section>
+				<h4>Data and the cake</h4>
+
+				<img class="plain"  src="https://media.giphy.com/media/3o6UB0XRs7tW8DMyHu/giphy.gif" width=50%/>
+		 </section>
+
+</section>
+
+
+	<section>
+		<section>
+		<h2>Success stories</h2>
+
+		<a href="https://software-carpentry.org/">Software carpentry</a> <br>
+
+		<a href="http://jupyter.org//">Project Jupyter</a> <br> and its contribution to the
+		<a href="https://www.numfocus.org/blog/numfocus-projects-featured-in-ligo-gravitational-waves-discovery/"> Nobel Prize in Physics</a> <br>
+
+		<a href="http://xarray.pydata.org/en/stable/">xarray</a> <br><br>
+
+		<small>
+		And many more...
+	</small>
+
+</section>
+		<section>
+	<h4>Growth of popular data-science languages</h4>
+
+	<img class="plain" src="img/so-trends.png" width=70%>
+
+	<div align="right">
+		<font size="2"> <a href="https://insights.stackoverflow.com/trends">https://insights.stackoverflow.com/trends</a> </font>
+	</div>
+
+		</section>
+</section>
+
+	<section>
+		<section>
+			<h2>Reproducible science</h2>
+		</section>
+		<section>
+			<a href="https://www.nature.com/news/reproducibility-1.17552">
+				<img class="plain"  src="img/nature_repro.png" width=60%/>
+			</a>
+			<div align="right">
+				<font size="2"> <a href="https://www.nature.com/news/reproducibility-1.17552">Nature</a><br></font>
+			</div>
+		</section>
+		<section>
+			<a href="https://www.nature.com/articles/nature10836">
+				<img class="plain"  src="img/nature_os.png" width=70%/>
+			</a>
+			<div align="right">
+				<font size="2"> <a href="https://www.nature.com/articles/nature10836">Nature</a><br></font>
+			</div>
+		</section>
+		<section>
+	    <h4>A new business model</h4>
+
+			<a href="https://codeocean.com/explore">
+				<img class="plain"  src="img/codeocean.png" width=70%/>
+			</a>
+			<div align="right">
+				<font size="2"> <a href="https://codeocean.com/explore">Code Ocean</a><br></font>
+			</div>
+		</section>
+		<section>
+	    <h4>the open source model</h4>
+
+			<a href="https://edu.oggm.org/en/latest/">
+				<img class="plain"  src="img/os_edu.png" width=70%/>
+			</a>
+			<div align="right">
+				<font size="2"> <a href="https://edu.oggm.org/en/latest/">edu.oggm.org</a><br></font>
+			</div>
+		</section>
+  </section>
+
+	<section>
+		<section>
+
+		<h4>Cloud computing and big data</h4>
+
+		<small>
+		<ul>
+			<li>CMIP3 (40 TB), CMIP5 (2 PB), CMIP6 (~10 PB) (<a href="https://www.wcrp-climate.org/JSC38/presentations/CMIP6_JSC38_2017.pdf">source</a>)</li>
+			<li>Earth Observation data</li>
+		</ul>
+			<a href="http://nextgeoss.eu/wp-content/uploads/Hame_Big_Data_Nextgeoss-Summit17.pdf">
+				<img class="plain"  src="img/esa.png" width=60%/>
+			</a>
+		</small>
+
+	</section>
+
+		<section>
+        <h4>The future of computing?</h4>
+
+				Bring your code <em>to the data</em>, not the other way around.
+
+				<section>
+					<a href="http://pangeo.io">
+						<img class="plain"  src="img/pangeo.png" width=50%/>
+					</a>
+					<div align="right">
+						<font size="2"> <a href="http://pangeo.io/">pangeo.io</a><br></font>
+					</div>
+				</section>
+
+	</section>
+
+	</section>
+
+
+
+
+	<!--
+	<section>
+
+			<h3>Do you know them?</h3>
+		<table>
+        <tbody><tr>
+	            <td><img class="plain" src="img/njsmith.jpg" width=120></td>
+	            <td><img class="plain" src="img/tcaswell.jpeg" width=120></td>
+	            <td><img class="plain" src="img/azeileis.jpeg" width=120></td>
+        </tr>
+   </table>
+
+	 <span class="fragment">
+		 <a href="https://vorpus.org/">N. J. Smith</a>, PostDoc at BIDS (Berkeley) <br>
+		 <a href="http://jfi.uchicago.edu/~tcaswell/">T. J. Caswell</a>, RA at U. Chicago <br>
+		 <a href="https://eeecon.uibk.ac.at/~zeileis/">A. Zeileis</a>, Prof. at UIBK <br>
+	 </span>
+
+	 <span class="fragment">
+		 ... and core developers of numpy, matplotlib and R.
+	 </span>
+
+  </section>
+  -->
+
+  <section style="text-align: left;">
+
+			<h3>Sustainability crisis?</h3>
+			<small>
+		<ul>
+			<li>Number of users increases, what about the number of maintainers?</li>
+			<li>User claim for stable, reliable, and cross-platform software impedes innovation (e.g. Py2 VS Py3 conundrum)</li>
+			<li>Did you know that NumPy wasn't really funded? (this <a href="https://www.numfocus.org/blog/why-is-numpy-only-now-getting-funded/"> changed</a> recently)</li>
+			<li>Did you know that most OS packages can be <a href="https://www.scipy.org/citing.html"> cited </a> in scientific publications?</li>
+		</ul>
+
+		<br>
+		<br>
+
+    <span style="vertical-align: middle;">See e.g. initatives like </span>
+		<a href="https://www.numfocus.org" style="vertical-align: middle;">
+			<img class="plain"  src="https://www.numfocus.org/wp-content/uploads/NumFocus_LRG.png" style="vertical-align: middle;" width=200/>
+    </a>
+		</small>
+	</section>
+
+	<section>
+
+		<b>With open source, modern software development practices and education, we can address the big challenges</b>.
+		<br>
+		<br>
+		There is a train to catch, and it is time that (EU) universities and funding
+		agencies realize it, so that we don't miss it.
+
+	</section>
+
+</section>
+
+
+
+
+		<section>
+
+			<h2>Thank you!</h2>
+
+			<a href="https://creativecommons.org/licenses/by/4.0/">
+				<img class="plain"  src="https://licensebuttons.net/l/by/4.0/88x31.png"/>
+			</a> <br>
+
+			<div style="line-height:15%;">
+			<font size="2">
+			The presentation "What open-source can do for you and what you can do for open-source" <br> by
+			<a href="http://fabienmaussion.info/">Fabien Maussion</a>
+			is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License.</a>
+		  </font>
+      </div>
+
+		</section>
+
+
+
+			<section style="text-align: left;">
+			<small>
+			Further reading: <br>
+			<ul>
+				<li>Did you notice that most  pictures are also links in the presentation?</li>
+				<li><a href="https://arxiv.org/abs/1610.03159">The Astropy Problem</a></li>
+				<li><a href="https://www.numfocus.org/blog/why-is-numpy-only-now-getting-funded/">Why Is NumPy Only Now Getting Funded?</a></li>
+				<li><a href="https://figshare.com/articles/Pangeo_NSF_Earthcube_Proposal/5361094">"Pangeo: An Open Source Big Data Climate Science Platform" (NSF award 1740648)</a></li>
+			</ul>
+		  </small>
+      </section>
+
+
+		</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
