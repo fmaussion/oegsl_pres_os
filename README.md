@@ -1,6 +1,6 @@
-# OGGM presentation
+# open source presentation
 
-https://oggm.org/framework_talk
+http://fabienmaussion.info/oegsl_pres_os
 
 Done with [reveal.js](https://revealjs.com/).
 
